@@ -3,10 +3,9 @@ import numpy as np
 
 class SubsequenceStringKernel:
 
-    def __init__(self, N, m_lambda, C, X, Y):
+    def __init__(self, N, m_lambda, X, Y):
         self.X = X
         self.Y = Y
-        self.C = C
         self.m_lambda = m_lambda
         self.N = N
 
