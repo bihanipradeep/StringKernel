@@ -1,6 +1,7 @@
 # coding: utf-8
 import numpy as np
 
+
 class SubsequenceStringKernel:
 
     def __init__(self, N, m_lambda, X, Y):
@@ -46,8 +47,10 @@ class SubsequenceStringKernel:
         lenX, lenY = X.shape[0], Y.shape[0]
 
         mat = np.zeros((lenX, lenY))
+        print("Matrix consist of :", lenX, " X", lenY)
         for i in range(lenX):
             for j in range(lenY):
+                print("computing : M[",i,",",j,"]")
                 mat[i, j] = self.compute(X[i, 0], Y[j, 0])
 
         mat_X = np.zeros((lenX, 1))
@@ -59,5 +62,29 @@ class SubsequenceStringKernel:
             mat_Y[j] = self.compute(Y[j, 0], Y[j, 0])
 
         return np.divide(mat, np.sqrt(mat_Y.T * mat_X))
+        
+    def getKernelInput(self):
+        X = self.X
+        Y = self.Y
 
+        lenX, lenY = X.shape[0], Y.shape[0]
 
+        mat = np.zeros((lenX, lenY))
+        print("Matrix consist of :", lenX, " X", lenY)
+        for i in range(lenX):
+            for j in range(lenY)[i:]:
+                print("computing : M[",i,",",j,"]")
+                temp = self.compute(X[i, 0], Y[j, 0])
+                mat[i, j] = temp
+                if(i!=j):
+                    mat[j, i] = temp
+
+        mat_X = np.zeros((lenX, 1))
+        mat_Y = np.zeros((lenY, 1))
+
+        for i in range(lenX):
+            mat_X[i] = self.compute(X[i, 0], X[i, 0])
+        for j in range(lenY):
+            mat_Y[j] = self.compute(Y[j, 0], Y[j, 0])
+
+        return np.divide(mat, np.sqrt(mat_Y.T * mat_X))

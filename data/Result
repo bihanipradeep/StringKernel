@@ -1,0 +1,19 @@
+te_075 = [1 0 1 0 0 1 1 0 0 0 1 1 1 1 1 1 1 1 1 1]
+te_050 = [0 0 1 0 0 1 1 0 0 0 1 1 1 1 1 1 1 1 1 1]
+te_025 = [0 0 1 0 0 1 1 0 0 0 1 1 1 1 1 1 1 1 1 1]
+te_n_075=[1 0 0 0 0 1 1 0 0 0 1 1 1 1 1 1 1 1 1 1]
+te_n_09=[1 0 1 0 1 1 1 0 0 1 1 1 1 1 1 1 1 1 1 1]
+te_n_5=[0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1]
+[0 0 0 0 0 1 1 0 0 0 1 1 1 1 1 1 1 1 1 1]
+
+/*
+Normalizeds string  kernel 
+Lambda
+N
+case 1: turkish and english
+case 2: shakshapere and trump
+case 3: trump and biden
+
+Lambda clsoe to 1 give result when Normalizeds ?
+
+  */

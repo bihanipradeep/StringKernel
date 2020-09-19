@@ -1,15 +1,14 @@
-
 from numpy import genfromtxt
 import numpy as np
 from pathlib import Path
-
+import Constant as C
 
 class CsvReader:
     def __init__(self, filename):
         self.fileName = filename
 
     def getLines(self):
-        fileRead = open("data/" + self.fileName, 'r')
+        fileRead = open(C.data_folder + self.fileName, 'r')
         return fileRead.readlines()
 
 
