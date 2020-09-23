@@ -1,29 +1,23 @@
 # coding: utf-8
 from Kernel.SubsequenceStringKernel import SubsequenceStringKernel
-from TextProcessing.CsvReader import CsvReader
 from sklearn import svm
-import pickle
-import Constant as C
-import numpy as np
+import sys
+import Util as util
 
-csvReader = CsvReader(C.inputFile_0)
-X = csvReader.getTextTestData()
-Y = np.array([0 for _ in range(X.shape[0]) ])
 
-csvReader = CsvReader(C.inputFile_1)
-X1 = csvReader.getTextTestData()
-X = np.append(X, X1)
-Y = np.append(Y, np.array([1 for _ in range(X1.shape[0])]))
-length = X.shape[0]
+def build_model(case_name, m_lambda, n, purpose):
+    x, y = util.get_data(case_name, purpose)
+    ssk = SubsequenceStringKernel(n, m_lambda, x, x)
+    clf = svm.SVC(kernel='precomputed')
+    k = ssk.build_kernel()
+    clf.fit(k, y)
+    y_predict = clf.predict(k)
+    print(y_predict)
+    util.print_model(case_name, m_lambda, n, clf)
+    util.print_reports(case_name, y, y_predict, m_lambda, n, purpose)
 
-SSK = SubsequenceStringKernel(C.N, C.m_lambda, X.reshape(length, 1), X.reshape(length, 1))
 
-clf = svm.SVC(kernel='precomputed')
-K = SSK.getKernelInput()
-print("Kernel Finished !!!")
-print(K)
-clf.fit(K, Y)
-
-with open(C.pkl_filename, 'wb') as file:
-    pickle.dump(clf, file)
-
+if __name__ == "__main__":
+    # case_name, m_lambda, n = util.read_argument(sys.argv[1:])
+    # build_model(case_name, m_lambda, n, "input")
+    util.different_parameters(sys.argv[1], build_model, "input")
