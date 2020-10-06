@@ -1,0 +1,54 @@
+case2 lambda:0.9 N:5
+              precision    recall  f1-score   support
+
+       Tweet       0.90      0.96      0.93        49
+ Shakespeare       0.96      0.90      0.93        50
+
+    accuracy                           0.93        99
+   macro avg       0.93      0.93      0.93        99
+weighted avg       0.93      0.93      0.93        99
+case2 lambda:0.9 N:6
+              precision    recall  f1-score   support
+
+       Tweet       0.87      0.96      0.91        49
+ Shakespeare       0.96      0.86      0.91        50
+
+    accuracy                           0.91        99
+   macro avg       0.91      0.91      0.91        99
+weighted avg       0.91      0.91      0.91        99
+case2 lambda:0.9 N:7
+              precision    recall  f1-score   support
+
+       Tweet       0.87      0.94      0.90        49
+ Shakespeare       0.93      0.86      0.90        50
+
+    accuracy                           0.90        99
+   macro avg       0.90      0.90      0.90        99
+weighted avg       0.90      0.90      0.90        99
+case2 lambda:0.9 N:8
+              precision    recall  f1-score   support
+
+       Tweet       0.84      0.96      0.90        49
+ Shakespeare       0.95      0.82      0.88        50
+
+    accuracy                           0.89        99
+   macro avg       0.90      0.89      0.89        99
+weighted avg       0.90      0.89      0.89        99
+case2 lambda:0.9 N:9
+              precision    recall  f1-score   support
+
+       Tweet       0.84      0.96      0.90        49
+ Shakespeare       0.95      0.82      0.88        50
+
+    accuracy                           0.89        99
+   macro avg       0.90      0.89      0.89        99
+weighted avg       0.90      0.89      0.89        99
+case2 lambda:0.9 N:5
+              precision    recall  f1-score   support
+
+       Tweet       0.90      0.96      0.93        49
+ Shakespeare       0.96      0.90      0.93        50
+
+    accuracy                           0.93        99
+   macro avg       0.93      0.93      0.93        99
+weighted avg       0.93      0.93      0.93        99

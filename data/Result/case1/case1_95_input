@@ -1,0 +1,9 @@
+case1 lambda:0.95 N:10
+              precision    recall  f1-score   support
+
+     English       1.00      1.00      1.00        50
+     Turkish       1.00      1.00      1.00        50
+
+    accuracy                           1.00       100
+   macro avg       1.00      1.00      1.00       100
+weighted avg       1.00      1.00      1.00       100

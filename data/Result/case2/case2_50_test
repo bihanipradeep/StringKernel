@@ -1,0 +1,9 @@
+case2 lambda:0.5 N:5
+              precision    recall  f1-score   support
+
+       Tweet       0.92      0.96      0.94        49
+ Shakespeare       0.96      0.92      0.94        50
+
+    accuracy                           0.94        99
+   macro avg       0.94      0.94      0.94        99
+weighted avg       0.94      0.94      0.94        99
