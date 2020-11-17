@@ -1,0 +1,9 @@
+case2 lambda:0.85 N:5
+              precision    recall  f1-score   support
+
+       Trump       0.98      0.88      0.93        50
+ Shakespeare       0.89      0.98      0.93        50
+
+    accuracy                           0.93       100
+   macro avg       0.93      0.93      0.93       100
+weighted avg       0.93      0.93      0.93       100

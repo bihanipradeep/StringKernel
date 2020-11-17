@@ -1,0 +1,9 @@
+case9 lambda:0.85 N:5
+              precision    recall  f1-score   support
+
+       Trump       0.76      0.88      0.81        50
+       Boris       0.86      0.72      0.78        50
+
+    accuracy                           0.80       100
+   macro avg       0.81      0.80      0.80       100
+weighted avg       0.81      0.80      0.80       100

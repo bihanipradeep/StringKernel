@@ -1,0 +1,9 @@
+case4 lambda:0.85 N:5
+              precision    recall  f1-score   support
+
+       Trump       0.99      0.98      0.99       500
+       Biden       0.98      0.99      0.99       500
+
+    accuracy                           0.99      1000
+   macro avg       0.99      0.99      0.99      1000
+weighted avg       0.99      0.99      0.99      1000

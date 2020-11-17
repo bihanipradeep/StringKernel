@@ -1,0 +1,9 @@
+case6 lambda:0.85 N:5
+              precision    recall  f1-score   support
+
+ Shakespeare       0.92      0.92      0.92        50
+       Bible       0.92      0.92      0.92        50
+
+    accuracy                           0.92       100
+   macro avg       0.92      0.92      0.92       100
+weighted avg       0.92      0.92      0.92       100

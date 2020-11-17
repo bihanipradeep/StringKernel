@@ -1,0 +1,9 @@
+case8 lambda:0.85 N:5
+              precision    recall  f1-score   support
+
+       biden       1.00      0.98      0.99        50
+       bible       0.98      1.00      0.99        50
+
+    accuracy                           0.99       100
+   macro avg       0.99      0.99      0.99       100
+weighted avg       0.99      0.99      0.99       100

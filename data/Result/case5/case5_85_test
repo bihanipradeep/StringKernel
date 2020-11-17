@@ -1,0 +1,27 @@
+case5 lambda:0.85 N:5
+              precision    recall  f1-score   support
+
+       Trump       0.50      1.00      0.67         1
+      Macron       0.00      0.00      0.00         1
+
+    accuracy                           0.50         2
+   macro avg       0.25      0.50      0.33         2
+weighted avg       0.25      0.50      0.33         2
+case5 lambda:0.85 N:5
+              precision    recall  f1-score   support
+
+       Trump       0.94      1.00      0.97        50
+      Macron       1.00      0.94      0.97        50
+
+    accuracy                           0.97       100
+   macro avg       0.97      0.97      0.97       100
+weighted avg       0.97      0.97      0.97       100
+case5 lambda:0.85 N:5
+              precision    recall  f1-score   support
+
+       Trump       0.94      1.00      0.97        50
+      Macron       1.00      0.94      0.97        50
+
+    accuracy                           0.97       100
+   macro avg       0.97      0.97      0.97       100
+weighted avg       0.97      0.97      0.97       100

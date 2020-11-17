@@ -1,0 +1,9 @@
+case7 lambda:0.85 N:5
+              precision    recall  f1-score   support
+
+   democrats       0.60      0.72      0.65        50
+  republican       0.65      0.52      0.58        50
+
+    accuracy                           0.62       100
+   macro avg       0.62      0.62      0.62       100
+weighted avg       0.62      0.62      0.62       100
